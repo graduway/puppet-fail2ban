@@ -13,6 +13,7 @@ define fail2ban::jail (
   Optional[Integer] $findtime = undef,
   Integer $bantime = $fail2ban::bantime,
   Optional[String] $port = undef,
+  Optional[String] $protocol = undef,
   Optional[String] $backend = undef,
   Array[Stdlib::IP::Address] $ignoreip = [],
 
